@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "addgems:oreonyx"
+  },
+
+  "result": "addgems:gemonyx",
+  "experience": 1.25,
+  "cookingtime": 100
+}

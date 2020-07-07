@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "addgems:oreruby"
+  },
+
+  "result": "addgems:gemruby",
+  "experience": 1.25,
+  "cookingtime": 100
+}

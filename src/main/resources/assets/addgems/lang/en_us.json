@@ -1,0 +1,29 @@
+{
+  "_comment_": "Ores",
+  "block.addgems.oreamethyst": "Amethyst Ore",
+  "block.addgems.oreonyx": "Onyx Ore",
+  "block.addgems.oreperidot": "Peridot Ore",
+  "block.addgems.oreruby": "Ruby Ore",
+  "block.addgems.oresapphire": "Sapphire Ore",
+  "block.addgems.oretopaz": "Topaz Ore",
+
+  "_comment_": "Blocks",
+  "block.addgems.blockamethyst": "Block of Amethyst",
+  "block.addgems.blockonyx": "Block of Onyx",
+  "block.addgems.blockperidot": "Block of Peridot",
+  "block.addgems.blockruby": "Block of Ruby",
+  "block.addgems.blocksapphire": "Block of Sapphire",
+  "block.addgems.blocktopaz": "Block of Topaz",
+
+  "_comment_": "Gems",
+  "item.addgems.gemamethyst": "Amethyst",
+  "item.addgems.gemonyx": "Onyx",
+  "item.addgems.gemperidot": "Peridot",
+  "item.addgems.gemruby": "Ruby",
+  "item.addgems.gemsapphire": "Sapphire",
+  "item.addgems.gemtopaz": "Topaz",
+
+
+  "_comment_": "Creative Tabs",
+  "itemGroup.addgems": "Additional Gems"
+}

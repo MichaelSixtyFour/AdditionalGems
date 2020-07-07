@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "addgems:oreperidot"
+  },
+
+  "result": "addgems:gemperidot",
+  "experience": 2.5,
+  "cookingtime": 200
+}

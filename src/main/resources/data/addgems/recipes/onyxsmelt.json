@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "addgems:oreonyx"
+  },
+
+  "result": "addgems:gemonyx",
+  "experience": 2.5,
+  "cookingtime": 200
+}

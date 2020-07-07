@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+
+  "ingredient": {
+      "item": "addgems:oresapphire"
+  },
+
+  "result": "addgems:gemsapphire",
+  "experience": 2.5,
+  "cookingtime": 200
+}

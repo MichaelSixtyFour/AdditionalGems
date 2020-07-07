@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "addgems:oreamethyst"
+  },
+
+  "result": "addgems:gemamethyst",
+  "experience": 1.25,
+  "cookingtime": 100
+}

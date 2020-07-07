@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+
+  "ingredient": {
+      "item": "addgems:oreperidot"
+  },
+
+  "result": "addgems:gemperidot",
+  "experience": 1.25,
+  "cookingtime": 100
+}

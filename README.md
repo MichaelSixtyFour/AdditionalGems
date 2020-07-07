@@ -5,6 +5,7 @@ Images of the blocks/items can be seen in the images tab.
 
 ### Features
 - Gems! (Onyx, Amethyst, Ruby, Sapphire,Topaz, and Peridot)
+- Ore generation (config included!)
 - Configuration! (veinsize, minheight, maxheight, veinsperchunk, and harvestlevel)
  
 

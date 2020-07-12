@@ -6,14 +6,14 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 
-public class OreRuby extends Block {
+public class OreOpal extends Block {
 
-    public OreRuby() {
+    public OreOpal() {
             super(Properties.create(Material.ROCK)
-            .sound(SoundType.STONE)
+                .sound(SoundType.STONE)
                 .hardnessAndResistance(3.5f)
                 .harvestTool(ToolType.PICKAXE)
-                    .harvestLevel(AddGemsConfig.HarvestRuby.get())
+                .harvestLevel(AddGemsConfig.HarvestOpal.get())
         );
 }
 }

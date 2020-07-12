@@ -1,6 +1,6 @@
 package dev.advaluti.addgems.blocks;
 
-import dev.advaluti.addgems.setup.AddGemsConfig;
+import dev.advaluti.addgems.AddGemsConfig;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

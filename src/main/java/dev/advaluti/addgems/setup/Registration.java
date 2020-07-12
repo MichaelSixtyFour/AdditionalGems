@@ -35,6 +35,7 @@ public class Registration {
     public static final RegistryObject<GemBase> GEMSAPPHIRE = ITEMS.register("gemsapphire", GemBase::new);
     public static final RegistryObject<GemBase> GEMTOPAZ = ITEMS.register("gemtopaz", GemBase::new);
     public static final RegistryObject<GemBase> GEMRUBY = ITEMS.register("gemruby", GemBase::new);
+    public static final RegistryObject<GemBase> GEMOPAL = ITEMS.register("gemopal", GemBase::new);
 
     //GEM ORES
     public static final RegistryObject<OreAmethyst> OREAMETHYST = BLOCKS.register("oreamethyst", OreAmethyst::new);
@@ -55,6 +56,9 @@ public class Registration {
     public static final RegistryObject<OreRuby> ORERUBY = BLOCKS.register("oreruby", OreRuby::new);
     public static final RegistryObject<Item> ORERUBY_ITEM = ITEMS.register("oreruby", () -> new BlockItem(ORERUBY.get(), new Item.Properties().group(ModSetup.ADDGEMS_GROUP)));
 
+    public static final RegistryObject<OreOpal> OREOPAL = BLOCKS.register("oreopal", OreOpal::new);
+    public static final RegistryObject<Item> OREOPAL_ITEM = ITEMS.register("oreopal", () -> new BlockItem(OREOPAL.get(), new Item.Properties().group(ModSetup.ADDGEMS_GROUP)));
+
     //GEM BLOCKS
 
     public static final RegistryObject<GemBlockBase> BLOCKAMETHYST = BLOCKS.register("blockamethyst", GemBlockBase::new);
@@ -74,6 +78,9 @@ public class Registration {
 
     public static final RegistryObject<GemBlockBase> BLOCKRUBY = BLOCKS.register("blockruby", GemBlockBase::new);
     public static final RegistryObject<Item> BLOCKRUBY_ITEM = ITEMS.register("blockruby", () -> new BlockItem(BLOCKRUBY.get(), new Item.Properties().group(ModSetup.ADDGEMS_GROUP)));
+
+    public static final RegistryObject<GemBlockBase> BLOCKOPAL = BLOCKS.register("blockopal", GemBlockBase::new);
+    public static final RegistryObject<Item> BLOCKOPAL_ITEM = ITEMS.register("blockopal", () -> new BlockItem(BLOCKOPAL.get(), new Item.Properties().group(ModSetup.ADDGEMS_GROUP)));
 
     //ORE GEN
     public static void modSetup(final FMLCommonSetupEvent event) {

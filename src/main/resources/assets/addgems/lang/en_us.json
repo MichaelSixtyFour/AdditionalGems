@@ -6,6 +6,7 @@
   "block.addgems.oreruby": "Ruby Ore",
   "block.addgems.oresapphire": "Sapphire Ore",
   "block.addgems.oretopaz": "Topaz Ore",
+  "block.addgems.oreopal": "Opal Ore",
 
   "_comment_": "Blocks",
   "block.addgems.blockamethyst": "Block of Amethyst",
@@ -14,6 +15,7 @@
   "block.addgems.blockruby": "Block of Ruby",
   "block.addgems.blocksapphire": "Block of Sapphire",
   "block.addgems.blocktopaz": "Block of Topaz",
+  "block.addgems.blockopal": "Block of Opal",
 
   "_comment_": "Gems",
   "item.addgems.gemamethyst": "Amethyst",
@@ -22,6 +24,7 @@
   "item.addgems.gemruby": "Ruby",
   "item.addgems.gemsapphire": "Sapphire",
   "item.addgems.gemtopaz": "Topaz",
+  "item.addgems.gemopal": "Opal",
 
 
   "_comment_": "Creative Tabs",

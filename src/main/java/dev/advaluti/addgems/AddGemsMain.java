@@ -1,6 +1,5 @@
 package dev.advaluti.addgems;
 
-import dev.advaluti.addgems.setup.AddGemsConfig;
 import dev.advaluti.addgems.setup.ClientSetup;
 import dev.advaluti.addgems.setup.ModSetup;
 import dev.advaluti.addgems.setup.Registration;

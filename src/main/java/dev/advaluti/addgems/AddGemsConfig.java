@@ -1,4 +1,4 @@
-package dev.advaluti.addgems.setup;
+package dev.advaluti.addgems;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,6 +11,7 @@ public class AddGemsConfig {
 
     public static final String CATEGORY_AMETHYST = "amethyst";
     public static final String CATEGORY_ONYX = "onyx";
+    public static final String CATEGORY_OPAL = "opal";
     public static final String CATEGORY_PERIDOT = "peridot";
     public static final String CATEGORY_RUBY = "ruby";
     public static final String CATEGORY_SAPPHIRE = "sapphire";
@@ -31,6 +32,12 @@ public class AddGemsConfig {
     public static ForgeConfigSpec.IntValue VPCOnyx;
     public static ForgeConfigSpec.IntValue MinHeightOnyx;
     public static ForgeConfigSpec.IntValue MaxHeightOnyx;
+
+    public static ForgeConfigSpec.BooleanValue enableOpal;
+    public static ForgeConfigSpec.IntValue VSOpal;
+    public static ForgeConfigSpec.IntValue VPCOpal;
+    public static ForgeConfigSpec.IntValue MinHeightOpal;
+    public static ForgeConfigSpec.IntValue MaxHeightOpal;
 
     public static ForgeConfigSpec.BooleanValue enablePeridot;
     public static ForgeConfigSpec.IntValue VSPeridot;
@@ -58,6 +65,7 @@ public class AddGemsConfig {
 
     public static ForgeConfigSpec.IntValue HarvestAmethyst;
     public static ForgeConfigSpec.IntValue HarvestOnyx;
+    public static ForgeConfigSpec.IntValue HarvestOpal;
     public static ForgeConfigSpec.IntValue HarvestPeridot;
     public static ForgeConfigSpec.IntValue HarvestSapphire;
     public static ForgeConfigSpec.IntValue HarvestTopaz;
@@ -90,6 +98,16 @@ public class AddGemsConfig {
             MaxHeightOnyx = BUILDER.comment("Maximum height").defineInRange("MaxHeightOnyx",16, 0, 255);
             HarvestOnyx = BUILDER.comment("Harvest level").defineInRange("HarvestOnyx",2, 0, 4);
             BUILDER.pop();
+
+            BUILDER.comment("Opal settings").push(CATEGORY_OPAL);
+            enableOpal = BUILDER.comment("Enable Topaz ore generation (default: true)").define("enableTopaz", true);
+            VSOpal = BUILDER.comment("Vein size").defineInRange("VSOpal",4, 0, 50);
+            VPCOpal = BUILDER.comment("Veins per chunk").defineInRange("VPCOpal",8, 0, 50);
+            MinHeightOpal = BUILDER.comment("Minimum height").defineInRange("MinHeightOpal",32, 0, 255);
+            MaxHeightOpal = BUILDER.comment("Maximum height").defineInRange("MaxHeightOpal",192, 0, 255);
+            HarvestOpal = BUILDER.comment("Harvest level").defineInRange("HarvestOpal",2, 0, 4);
+            BUILDER.pop();
+
 
             BUILDER.comment("Peridot settings").push(CATEGORY_PERIDOT);
             enablePeridot = BUILDER.comment("Enable Peridot ore generation (default: true)").define("enablePeridot", true);

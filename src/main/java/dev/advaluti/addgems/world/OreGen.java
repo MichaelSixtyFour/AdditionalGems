@@ -1,6 +1,6 @@
 package dev.advaluti.addgems.world;
 
-import dev.advaluti.addgems.setup.AddGemsConfig;
+import dev.advaluti.addgems.AddGemsConfig;
 import dev.advaluti.addgems.setup.Registration;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
@@ -9,11 +9,21 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.placement.ConfiguredPlacement;
 import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
+import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class OreGen {
     public static void OreGenerate() {
         for(Biome biome : ForgeRegistries.BIOMES) {
+
+            if (BiomeDictionary.hasType(biome, BiomeDictionary.Type.NETHER)) {
+                if(AddGemsConfig.enableOpal.get()) {
+                    ConfiguredPlacement OpalGen = Placement.COUNT_RANGE.configure(
+                            new CountRangeConfig(AddGemsConfig.VPCOpal.get(), AddGemsConfig.MinHeightOpal.get(), 0, AddGemsConfig.MaxHeightOpal.get()));
+                    biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(
+                            new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHERRACK, Registration.OREOPAL.get().getDefaultState(), AddGemsConfig.VSOpal.get())).withPlacement(OpalGen));
+                }
+            }
 
             //GEMS
             if(AddGemsConfig.enableAmethyst.get()) {

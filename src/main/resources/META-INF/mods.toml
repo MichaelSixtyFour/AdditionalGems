@@ -1,9 +1,9 @@
 modLoader="javafml"
-loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 
 [[mods]]
 modId="addgems"
-version="1.1.0-1.16.1"
+version="1.1.1-1.15.2"
 displayName="Additional Gems"
 #logoFile="examplemod.png" #logo file
 authors="Advaluti"

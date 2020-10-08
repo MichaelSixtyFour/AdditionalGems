@@ -19,8 +19,8 @@ import static dev.advaluti.addgems.AddGemsMain.MOD_ID;
 
 public class Registration {
 
-    private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MOD_ID);
-    private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
+    private static final DeferredRegister<Block> BLOCKS = new DeferredRegister(ForgeRegistries.BLOCKS, MOD_ID);
+    private static final DeferredRegister<Item> ITEMS = new DeferredRegister(ForgeRegistries.ITEMS, MOD_ID);
 
     public static void init() {
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
